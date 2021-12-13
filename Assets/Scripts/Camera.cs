@@ -9,6 +9,7 @@ public class Camera : MonoBehaviour
     public float delay = 0.3f;
     public float distance = 7f;
     public float height;
+    public float back = 10;
     private Vector3 velocity = Vector3.zero;
 
     //METHODS
@@ -23,7 +24,7 @@ public class Camera : MonoBehaviour
     {
         //Make camera follow player
         Vector3 pos = new Vector3();
-        pos.x = player.position.x;
+        pos.x = player.position.x + back;
         pos.z = player.position.z - distance;
         pos.y = player.position.y + height;
         transform.position = Vector3.SmoothDamp(transform.position, pos, ref velocity, delay);
