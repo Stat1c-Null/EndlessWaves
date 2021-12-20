@@ -6,6 +6,9 @@ public class bullet : MonoBehaviour
 {
     public float speed = 7f;
     public float maxDistance;
+    public float damage;
+
+    private GameObject triggeringEnemy;
 
     // Update is called once per frame
     void Update()
@@ -15,6 +18,16 @@ public class bullet : MonoBehaviour
         //Destroy bullet if its far away
         if(maxDistance >= 10)
         {
+            Destroy(this.gameObject);
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            triggeringEnemy = other.gameObject;
+            triggeringEnemy.GetComponent<Enemy>().health -= damage;
             Destroy(this.gameObject);
         }
     }
