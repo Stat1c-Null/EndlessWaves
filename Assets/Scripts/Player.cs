@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     public GameObject bulletSpawnPoint;
     public float waitTime;
+    public GameObject bullet;
 
     //METHODS
     // Start is called before the first frame update
@@ -65,6 +66,6 @@ public class Player : MonoBehaviour
 
     void Shoot()
     {
-
+        Instantiate(bullet.transform, bulletSpawnPoint.transform.position, Quaternion.identity);
     }
 }

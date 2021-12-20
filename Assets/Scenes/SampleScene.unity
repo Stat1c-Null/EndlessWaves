@@ -174,6 +174,7 @@ MonoBehaviour:
   PlayerObj: {fileID: 1208105415}
   bulletSpawnPoint: {fileID: 1555864967}
   waitTime: 0.5
+  bullet: {fileID: 8232405135904151159, guid: 00e91e536ee55944ea563741fdbf21cc, type: 3}
 --- !u!4 &581005797
 Transform:
   m_ObjectHideFlags: 0
