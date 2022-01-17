@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
     public float waitTime;
     public GameObject bullet;
     public float points;
+    public float health = 100f;
+    public float enemyDamage = 0.1f;
+    private bool touchingEnemy = false;
 
     //METHODS
     // Start is called before the first frame update
@@ -63,10 +66,36 @@ public class Player : MonoBehaviour
             Debug.Log("Shoot");
             Shoot();
         }
+
+        //Decrease health if colliding with enemy
+        if(touchingEnemy) 
+        {
+            health -= enemyDamage;
+        }
     }
 
     void Shoot()
     {
         Instantiate(bullet.transform, bulletSpawnPoint.transform.position, PlayerObj.transform.rotation);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        //Check if colliding with enemy
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Colliding with enemy");
+            touchingEnemy = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        //Check if player stopped colliding with enemy
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Stopped Colliding with enemy");
+            touchingEnemy = false;
+        }
     }
 }
