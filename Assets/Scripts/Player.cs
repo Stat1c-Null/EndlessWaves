@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
     //VARIABLES
@@ -9,6 +10,10 @@ public class Player : MonoBehaviour
     public GameObject camera;
 
     public GameObject PlayerObj;
+    private Vector3 jump;
+    public float jumpForce = 2.0f;
+    public bool IsGrounded;
+    Rigidbody rb;
 
     public GameObject bulletSpawnPoint;
     public float waitTime;
@@ -22,7 +27,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
 
     // Update is called once per frame
@@ -32,7 +38,7 @@ public class Player : MonoBehaviour
         Plane playerPlane = new Plane(Vector3.up, transform.position);
         Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
         float hitDist = 0.0f;
-
+        
         if(playerPlane.Raycast(ray, out hitDist))
         {
             Vector3 targetPoint = ray.GetPoint(hitDist);
@@ -60,6 +66,13 @@ public class Player : MonoBehaviour
             transform.Translate(Vector3.back * movementSpeed * Time.deltaTime);
         }
 
+        //Jumping
+        if(Input.GetKeyDown(KeyCode.Space) && IsGrounded)
+        {
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            IsGrounded = false;
+        }
+
         //Shooting
         if(Input.GetMouseButtonDown(0))
         {
@@ -79,13 +92,20 @@ public class Player : MonoBehaviour
         Instantiate(bullet.transform, bulletSpawnPoint.transform.position, PlayerObj.transform.rotation);
     }
 
-    void OnCollisionEnter(Collision collision)
+
+
+    void OnCollisionStay(Collision collision)
     {
         //Check if colliding with enemy
         if(collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Colliding with enemy");
             touchingEnemy = true;
+        }
+        //Check if colliding with ground
+        if(collision.gameObject.tag == "Ground")
+        {
+            IsGrounded = true;
         }
     }
 

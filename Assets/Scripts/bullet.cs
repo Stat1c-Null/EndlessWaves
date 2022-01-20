@@ -28,6 +28,8 @@ public class bullet : MonoBehaviour
         {
             triggeringEnemy = other.gameObject;
             triggeringEnemy.GetComponent<Enemy>().health -= damage;
+            //Chase player if he hits enemy with bullet
+            triggeringEnemy.GetComponent<EnemyFollow>().chasing = true;
             Destroy(this.gameObject);
         }
     }
