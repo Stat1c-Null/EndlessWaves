@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
@@ -20,8 +21,22 @@ public class Player : MonoBehaviour
     public GameObject bullet;
     public float points;
     public float health = 100f;
+    private float maxHealth = 100f;
+    private float reloadedHealth;
     public float enemyDamage = 0.1f;
     private bool touchingEnemy = false;
+    //Ammo
+    public int maxHandgunAmmo = 100;
+    public int currentHandgunAmmo = 100;
+    public int maxHandgunClipAmmo = 11;
+    public int currentHandgunClipAmmo = 11;
+    private int reloadedAmmo;
+    public float restoredHealth = 25f;
+    public int restoredAmmo = 30;
+    //UI
+    public Text currentAmmoText;
+    public Text maxAmmoText;
+    public Text healthText;
 
     //METHODS
     // Start is called before the first frame update
@@ -29,6 +44,10 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
+        //Assign variable to text
+        currentAmmoText.text = currentHandgunClipAmmo + "/" + maxHandgunClipAmmo + " C";
+        maxAmmoText.text = currentHandgunAmmo + "/" + maxHandgunAmmo + " M";
+        healthText.text = health + " H";
     }
 
     // Update is called once per frame
@@ -74,10 +93,18 @@ public class Player : MonoBehaviour
         }
 
         //Shooting
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && currentHandgunClipAmmo > 0)
         {
-            Debug.Log("Shoot");
+            currentHandgunClipAmmo -= 1;//Remove ammo
             Shoot();
+        }
+
+        //Reload
+        if(Input.GetKeyDown(KeyCode.R) && currentHandgunClipAmmo < maxHandgunClipAmmo)
+        {
+            reloadedAmmo = maxHandgunClipAmmo - currentHandgunClipAmmo;
+            currentHandgunAmmo -= reloadedAmmo;//Take ammo away from total
+            currentHandgunClipAmmo += reloadedAmmo;//Put ammo in the clip
         }
 
         //Decrease health if colliding with enemy
@@ -85,6 +112,14 @@ public class Player : MonoBehaviour
         {
             health -= enemyDamage;
         }
+        //Kill Player
+        if(health <= 0) {
+            Destroy(this.gameObject);
+        }
+        //Update UI
+        currentAmmoText.text = currentHandgunClipAmmo + "/" + maxHandgunClipAmmo + " C";
+        maxAmmoText.text = currentHandgunAmmo + "/" + maxHandgunAmmo + " M";
+        healthText.text = health.ToString("0") + " H";//Remove decimal numbers at the end of health
     }
 
     void Shoot()
@@ -99,13 +134,41 @@ public class Player : MonoBehaviour
         //Check if colliding with enemy
         if(collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Colliding with enemy");
             touchingEnemy = true;
         }
         //Check if colliding with ground
         if(collision.gameObject.tag == "Ground")
         {
             IsGrounded = true;
+        }
+        //Check for collision with ammo or health box
+        if(collision.gameObject.tag == "HealthBox" && health < maxHealth) 
+        {
+            reloadedHealth = maxHealth - health;
+            //Check if amount of health needed to restore is less than 25, so then we can just give player max hp
+            if(reloadedHealth < restoredHealth)
+            {
+                health = maxHealth;
+                Destroy(collision.gameObject);
+            //If health is less than 25, we just gonna add 25 to the health
+            } else if(reloadedHealth > restoredHealth) {
+                health += restoredHealth;
+                Destroy(collision.gameObject);
+            }
+        }
+        if(collision.gameObject.tag == "AmmoBox" && currentHandgunAmmo < maxHandgunAmmo) 
+        {
+            reloadedAmmo = maxHandgunAmmo - currentHandgunAmmo;
+            //Check if amount of health needed to restore is less than 25, so then we can just give player max hp
+            if(reloadedAmmo < restoredAmmo)
+            {
+                currentHandgunAmmo = maxHandgunAmmo;
+                Destroy(collision.gameObject);
+            //If health is less than 25, we just gonna add 25 to the health
+            } else if(reloadedAmmo > restoredAmmo) {
+                currentHandgunAmmo += restoredAmmo;
+                Destroy(collision.gameObject);
+            }
         }
     }
 
@@ -114,7 +177,6 @@ public class Player : MonoBehaviour
         //Check if player stopped colliding with enemy
         if(collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Stopped Colliding with enemy");
             touchingEnemy = false;
         }
     }
