@@ -103,8 +103,19 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R) && currentHandgunClipAmmo < maxHandgunClipAmmo)
         {
             reloadedAmmo = maxHandgunClipAmmo - currentHandgunClipAmmo;
-            currentHandgunAmmo -= reloadedAmmo;//Take ammo away from total
-            currentHandgunClipAmmo += reloadedAmmo;//Put ammo in the clip
+            if(currentHandgunAmmo >= reloadedAmmo)
+            {
+                currentHandgunAmmo -= reloadedAmmo;//Take ammo away from total
+                currentHandgunClipAmmo += reloadedAmmo;//Put ammo in the clip
+            }  else if(currentHandgunAmmo < reloadedAmmo && currentHandgunAmmo > 0)
+            {
+                currentHandgunClipAmmo += currentHandgunAmmo;
+                currentHandgunAmmo = 0;
+            }
+            else
+            {
+                Debug.Log("No ammo in backpack");
+            }
         }
 
         //Decrease health if colliding with enemy
