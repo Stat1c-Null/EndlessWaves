@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 {
     //VARIABLES
     public float movementSpeed;
+    private float ogMoveSpeed;
+    public float runSpeed;
     public GameObject camera;
 
     public GameObject PlayerObj;
@@ -20,9 +22,12 @@ public class Player : MonoBehaviour
     public float waitTime;
     public GameObject bullet;
     public float points;
+    //Stats
     public float health = 100f;
     private float maxHealth = 100f;
     private float reloadedHealth;
+    public float stamina = 100f;
+    public float maxStamina = 100f;
     public float enemyDamage = 0.1f;
     private bool touchingEnemy = false;
     //Ammo
@@ -42,6 +47,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ogMoveSpeed = movementSpeed;
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         //Assign variable to text
@@ -83,6 +89,14 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.back * movementSpeed * Time.deltaTime);
+        }
+        //Sprinting
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            movementSpeed = runSpeed;
+        } else
+        {
+            movementSpeed = ogMoveSpeed;
         }
 
         //Jumping
