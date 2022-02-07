@@ -1473,6 +1473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'HealthBox '
       objectReference: {fileID: 0}
+    - target: {fileID: 220601395605672788, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 220601395605672791, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1586,6 +1590,10 @@ PrefabInstance:
       propertyPath: currentAmmoText
       value: 
       objectReference: {fileID: 1033538232}
+    - target: {fileID: 3239269620652036001, guid: a16184fefc7b12243b0473f610336fc9, type: 3}
+      propertyPath: currentHandgunAmmo
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3239269620652036007, guid: a16184fefc7b12243b0473f610336fc9, type: 3}
       propertyPath: m_Name
       value: Player Holder
