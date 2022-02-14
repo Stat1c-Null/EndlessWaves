@@ -7,30 +7,32 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     //VARIABLES
+    [Header("Movement")]
     public float movementSpeed;
     private float ogMoveSpeed;
     public float runSpeed;
+    public float jumpForce = 2.0f;
+    [HideInInspector]public bool IsGrounded;
+    [Header("Game Objects")]
     public GameObject camera;
-
     public GameObject PlayerObj;
     private Vector3 jump;
-    public float jumpForce = 2.0f;
-    public bool IsGrounded;
-    Rigidbody rb;
-
+    [HideInInspector] Rigidbody rb;
     public GameObject bulletSpawnPoint;
     public float waitTime;
     public GameObject bullet;
-    public float points;
     //Stats
+    [Header("Stats")]
     public float health = 100f;
     private float maxHealth = 100f;
     private float reloadedHealth;
     public float stamina = 100f;
     public float maxStamina = 100f;
     public float enemyDamage = 0.1f;
+    public float points;
     private bool touchingEnemy = false;
     //Ammo
+    [Header("Ammo")]
     public int maxHandgunAmmo = 100;
     public int currentHandgunAmmo = 100;
     public int maxHandgunClipAmmo = 11;
@@ -39,6 +41,7 @@ public class Player : MonoBehaviour
     public float restoredHealth = 25f;
     public int restoredAmmo = 30;
     //UI
+    [Header("UI")]
     public Text currentAmmoText;
     public Text maxAmmoText;
     public Text healthText;
