@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public GameObject camera;
     public GameObject PlayerObj;
     private Vector3 jump;
+    private bool moving = false;
     [HideInInspector] Rigidbody rb;
     public GameObject bulletSpawnPoint;
     public float waitTime;
@@ -28,8 +29,11 @@ public class Player : MonoBehaviour
     private float reloadedHealth;
     public float stamina = 100f;
     public float maxStamina = 100f;
+    public float MovingStaminaRegen = 5f;
+    public float NotMovingStaminaRegen = 10f;
+    public float staminaConsum = 10f;
     public float enemyDamage = 0.1f;
-    public float points;
+    [HideInInspector] public float points;
     private bool touchingEnemy = false;
     //Ammo
     [Header("Ammo")]
@@ -45,6 +49,7 @@ public class Player : MonoBehaviour
     public Text currentAmmoText;
     public Text maxAmmoText;
     public Text healthText;
+    public Image StaminUi;
 
     //METHODS
     // Start is called before the first frame update
@@ -62,6 +67,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateUI();
         //Player follow the mouse
         Plane playerPlane = new Plane(Vector3.up, transform.position);
         Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -79,29 +85,52 @@ public class Player : MonoBehaviour
         //Player Movement
         if(Input.GetKey(KeyCode.W))
         {
+            moving = true;
             transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.A))
         {
+            moving = true;
             transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
         } 
         if (Input.GetKey(KeyCode.D))
         {
+            moving = true;
             transform.Translate(Vector3.right * movementSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
+            moving = true;
             transform.Translate(Vector3.back * movementSpeed * Time.deltaTime);
         }
+        //Detect if player not moving
+        if(!(Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.A)) && !(Input.GetKey(KeyCode.D))) 
+        {
+            moving = false;
+        }
         //Sprinting
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 && moving == true)//Running
         {
             movementSpeed = runSpeed;
-        } else
+            stamina -= staminaConsum * Time.deltaTime;
+        } else if(!(Input.GetKey(KeyCode.LeftShift)) && stamina < maxStamina && moving == true) {//Moving but stamina is not full, regen slowly
+            stamina += MovingStaminaRegen * Time.deltaTime;
+            movementSpeed = ogMoveSpeed;
+        } 
+        else if(!(Input.GetKey(KeyCode.LeftShift)) && stamina < maxStamina && moving == false) {//Not moving but stamina is not full, regen quickly
+            stamina += NotMovingStaminaRegen * Time.deltaTime;
+            movementSpeed = ogMoveSpeed;
+        } 
+        else//Not running but stamina is full
         {
             movementSpeed = ogMoveSpeed;
         }
-
+        //Set stamina too max if it's too big
+        if(stamina > maxStamina)
+        {
+            stamina = maxStamina;
+        }
+        Debug.Log(stamina);
         //Jumping
         if(Input.GetKeyDown(KeyCode.Space) && IsGrounded)
         {
@@ -155,6 +184,11 @@ public class Player : MonoBehaviour
         Instantiate(bullet.transform, bulletSpawnPoint.transform.position, PlayerObj.transform.rotation);
     }
 
+    void UpdateUI()
+    {
+        //Update Stamina UI
+        StaminUi.fillAmount = stamina / maxStamina;
+    }
 
 
     void OnCollisionStay(Collision collision)
