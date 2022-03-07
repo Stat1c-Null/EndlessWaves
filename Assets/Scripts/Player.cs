@@ -116,8 +116,7 @@ public class Player : MonoBehaviour
         } else if(sprinting == false && stamina < maxStamina && moving == true) {//Moving but stamina is not full, regen slowly
             stamina += MovingStaminaRegen * Time.deltaTime;
             movementSpeed = ogMoveSpeed;
-        } 
-        else if(sprinting == false && stamina < maxStamina && moving == false) {//Not moving but stamina is not full, regen quickly
+        } else if(sprinting == false && stamina < maxStamina && moving == false) {//Not moving but stamina is not full, regen quickly
             stamina += NotMovingStaminaRegen * Time.deltaTime;
             movementSpeed = ogMoveSpeed;
         } 
