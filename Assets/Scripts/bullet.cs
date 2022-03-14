@@ -32,6 +32,14 @@ public class bullet : MonoBehaviour
             triggeringEnemy.GetComponent<EnemyFollow>().chasing = true;
             Destroy(this.gameObject);
         } 
+        if(other.tag == "EnemyRandom")
+        {
+            triggeringEnemy = other.gameObject;
+            triggeringEnemy.GetComponent<Enemy>().health -= damage;
+            //Chase player if he hits enemy with bullet
+            triggeringEnemy.GetComponent<EnemyFollow>().chasing = true;
+            Destroy(this.gameObject);
+        } 
         if(other.tag == "Wall") {
             Destroy(this.gameObject);
         }

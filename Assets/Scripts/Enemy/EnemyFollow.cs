@@ -27,7 +27,13 @@ public class EnemyFollow : MonoBehaviour
         if (Vector3.Distance(player.position ,  gameObject.transform.position) <= maxDistance)
         {
             //Stop enemy from patroling and make him follow player
-            gameObject.GetComponent<EnemyPatrolling>().patroling = false;
+            if(gameObject.tag == "Enemy")
+            {
+                gameObject.GetComponent<EnemyPatrolling>().patroling = false;
+            } else {
+                gameObject.GetComponent<EnemyRandomMovement>().chasing = true;
+            }
+            
             FollowPlayer();
         } else if(chasing == true) {
             FollowPlayer();

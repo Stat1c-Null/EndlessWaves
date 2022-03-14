@@ -10,7 +10,8 @@ public class EnemyRandomMovement : MonoBehaviour
     private bool isRotatingLeft = false;
     private bool isRotatingRight = false;
     private bool isWalking = false;
-    private bool chasing = false;
+    [HideInInspector]
+    public bool chasing = false;
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -48,11 +49,11 @@ public class EnemyRandomMovement : MonoBehaviour
 
     IEnumerator Wander()
     {
-        int rotationTime = Random.Range(1,3);
+        int rotationTime = Random.Range(1,9);
         int rotateWait = Random.Range(1,3);
         int rotateDirection = Random.Range(1, 2);//Choose to rotate either left or right
         int walkWait = Random.Range(1, 3);
-        int walkTime = Random.Range(1, 5);
+        int walkTime = Random.Range(1, 7);
         //Start movement
         isWandering = true;
         yield return new WaitForSeconds(walkWait);
