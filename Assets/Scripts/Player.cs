@@ -201,6 +201,11 @@ public class Player : MonoBehaviour
         {
             touchingEnemy = true;
         }
+        //Check if colliding with enemy
+        if(collision.gameObject.tag == "EnemyRandom")
+        {
+            touchingEnemy = true;
+        }
         //Check if colliding with ground
         if(collision.gameObject.tag == "Ground")
         {
@@ -241,6 +246,11 @@ public class Player : MonoBehaviour
     {
         //Check if player stopped colliding with enemy
         if(collision.gameObject.tag == "Enemy")
+        {
+            touchingEnemy = false;
+        }
+         //Check if player stopped colliding with enemy
+        if(collision.gameObject.tag == "EnemyRandom")
         {
             touchingEnemy = false;
         }

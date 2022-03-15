@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4886081339271830980}
   m_Layer: 0
   m_Name: EnemyRandom
-  m_TagString: Enemy
+  m_TagString: EnemyRandom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8770912705117793479}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.224717, y: -25.968933, z: 45.442806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -144,7 +144,7 @@ MonoBehaviour:
   player: {fileID: 0}
   rotSpeed: 10
   moveSpeed: 8
-  maxDistance: 5
+  maxDistance: 20
   chasing: 0
 --- !u!114 &4886081339271830980
 MonoBehaviour:
@@ -159,4 +159,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 6
-  rotationSpeed: 10
+  rotationSpeed: 15
+  chasing: 0

@@ -6,7 +6,6 @@ public class EnemyPatrolling : MonoBehaviour
 {
     public Transform[] waypoints;
     public int speed;
-
     private int waypointIndex;
     private float dist;
     public float switchRange = 1f;

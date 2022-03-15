@@ -30,7 +30,7 @@ public class EnemyFollow : MonoBehaviour
             if(gameObject.tag == "Enemy")
             {
                 gameObject.GetComponent<EnemyPatrolling>().patroling = false;
-            } else {
+            } else if(gameObject.tag == "EnemyRandom"){
                 gameObject.GetComponent<EnemyRandomMovement>().chasing = true;
             }
             
