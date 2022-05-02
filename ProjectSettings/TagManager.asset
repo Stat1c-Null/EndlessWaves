@@ -11,6 +11,8 @@ TagManager:
   - HealthBox
   - AmmoBox
   - EnemyRandom
+  - Water
+  - Food
   layers:
   - Default
   - TransparentFX

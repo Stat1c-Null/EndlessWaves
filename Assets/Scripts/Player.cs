@@ -34,6 +34,12 @@ public class Player : MonoBehaviour
     public float NotMovingStaminaRegen = 10f;
     public float staminaConsum = 10f;
     public float enemyDamage = 0.1f;
+    public float thirstStat = 100f;
+    public float maxThirstStat = 100f;
+    public float hungerStat = 100f;
+    public float maxHungerStat = 100f;
+    public float hungerDec = 0.1f;
+    public float thirstDec = 0.3f;
     [HideInInspector] public float points;
     private bool touchingEnemy = false;
     //Ammo
@@ -50,6 +56,8 @@ public class Player : MonoBehaviour
     public Text currentAmmoText;
     public Text maxAmmoText;
     public Text healthText;
+    public Text thirstText;
+    public Text hungerText;
     public Image StaminUi;
 
     //METHODS
@@ -63,12 +71,15 @@ public class Player : MonoBehaviour
         currentAmmoText.text = currentHandgunClipAmmo + "/" + maxHandgunClipAmmo + " C";
         maxAmmoText.text = currentHandgunAmmo + "/" + maxHandgunAmmo + " M";
         healthText.text = health + " H";
+        thirstText.text = thirstStat + "TH";
+        hungerText.text = hungerStat + "H";
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateUI();
+        HungerThirstUpdate();
         //Player follow the mouse
         Plane playerPlane = new Plane(Vector3.up, transform.position);
         Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -180,6 +191,22 @@ public class Player : MonoBehaviour
         currentAmmoText.text = currentHandgunClipAmmo + "/" + maxHandgunClipAmmo + " C";
         maxAmmoText.text = currentHandgunAmmo + "/" + maxHandgunAmmo + " M";
         healthText.text = health.ToString("0") + " H";//Remove decimal numbers at the end of health
+        thirstText.text = thirstStat.ToString("0") + "TH";
+        hungerText.text = hungerStat.ToString("0") + "H";
+    }
+
+    void HungerThirstUpdate()
+    {
+        thirstStat -= thirstDec * Time.deltaTime;
+        hungerStat -= hungerDec * Time.deltaTime;
+        if(thirstStat > maxThirstStat)
+        {
+            thirstStat = maxThirstStat;
+        }
+        if(hungerStat > maxHungerStat)
+        {
+            hungerStat = maxHungerStat;
+        }
     }
 
     void Shoot()
@@ -193,6 +220,20 @@ public class Player : MonoBehaviour
         StaminUi.fillAmount = stamina / maxStamina;
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        //Check collision with food and water
+        if(collision.gameObject.tag == "Food")
+        {
+            hungerStat += Random.Range(10, 25);
+            Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.tag == "Water")
+        {
+            thirstStat += Random.Range(15, 30);
+            Destroy(collision.gameObject);
+        }
+    }
 
     void OnCollisionStay(Collision collision)
     {
