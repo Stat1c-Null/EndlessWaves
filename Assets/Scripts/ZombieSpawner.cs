@@ -11,16 +11,22 @@ public class ZombieSpawner : MonoBehaviour
     private int spawnDelay;
     public int zombieLimit = 20;
     private bool spawn = false;
+    private float SpawnerX;
+    private float SpawnerZ;
+    private float SpawnerXScale;
+    private float SpawnerZScale;
 
     void Start()
     {
-        //SpawnZombie();
+        SpawnerX = transform.position.x;
+        SpawnerZ = transform.position.z;
+        SpawnerXScale = transform.localScale.x / 2;
+        SpawnerZScale = transform.localScale.z / 2;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //StartCoroutine(Spawn());
         if(zombieLimit > 0)
         {
             zombieLimit -= 1;
@@ -28,20 +34,26 @@ public class ZombieSpawner : MonoBehaviour
         } else {
             zombieLimit = -1;
         }
+        //Respawn zombie
+        if(spawn == false)
+        {
+            StartCoroutine(Spawn());
+        }
     }
 
     void SpawnZombie()
     {
-        SpawnXPos = Random.Range(-40f, 40f);
-        SpawnZPos = Random.Range(20f, 80f);
+        SpawnXPos = Random.Range(SpawnerX - SpawnerXScale, SpawnerX + SpawnerXScale);
+        SpawnZPos = Random.Range(SpawnerZ - SpawnerZScale, SpawnerZ + SpawnerZScale);
         Instantiate(zombie, new Vector3( SpawnXPos, 2.96f, SpawnZPos), Quaternion.identity);
     }
 
-    /*IEnumerator Spawn()
+    IEnumerator Spawn()
     {
-        spawnDelay = Random.Range(1,3);
+        spawnDelay = Random.Range(5,10);
         spawn = true;
+        SpawnZombie();
         yield return new WaitForSeconds(spawnDelay);
         spawn = false;
-    }*/
+    }
 }
