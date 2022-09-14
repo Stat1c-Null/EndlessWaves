@@ -123,6 +123,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &31720108 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+  m_PrefabInstance: {fileID: 1188960227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &52875251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 181472, guid: e9661e4c2bfea8344a07064944abe034, type: 3}
+  m_PrefabInstance: {fileID: 1830624622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &52875254
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52875251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 4f025ccab8429664ea3422a254c221ca, type: 3}
 --- !u!224 &74478350 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3497835604754086166, guid: 84af5464cd5090b43976093a1cd266d4, type: 3}
@@ -183,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &77081172 stripped
@@ -190,6 +218,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 77081171}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &104922360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
+  m_PrefabInstance: {fileID: 800885208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &104922363
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104922360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 5166d739d26f73246a2623515169479e, type: 3}
 --- !u!1 &105137210
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +321,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 235532520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &114335248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  m_PrefabInstance: {fileID: 205678457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &114335251
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114335248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 0ddb82da3485fac4dbfe187acb70a610, type: 3}
+--- !u!1 &123916273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+  m_PrefabInstance: {fileID: 970326549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &123916276
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123916273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: cb132eeaea305bc478721cc9b5cb57f8, type: 3}
 --- !u!1001 &124395185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -284,6 +369,10 @@ PrefabInstance:
     - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_Name
       value: Tree Type0 05
+      objectReference: {fileID: 0}
+    - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 459958, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_RootOrder
@@ -348,23 +437,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1247785028}
     m_Modifications:
     - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_Name
       value: Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.7556
+      value: 3.7555995
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.7556
+      value: 3.7556005
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.z
@@ -372,15 +465,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 91.59
+      value: -12.951202
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: -41.584904
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -206.95
+      value: -110.77038
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -388,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.y
@@ -423,7 +516,7 @@ GameObject:
   - component: {fileID: 130870773}
   m_Layer: 0
   m_Name: Fences (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,6 +550,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6052090593202787211, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
   m_PrefabInstance: {fileID: 455360785}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &191901931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+  m_PrefabInstance: {fileID: 1823171102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &191901935
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191901931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3262789968867269347, guid: 7e21ce70035bc6e4f89e54d244ee1cd0, type: 3}
 --- !u!4 &191970167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 492160, guid: 98653de49a7044442972e6997c40db16, type: 3}
@@ -482,6 +594,10 @@ PrefabInstance:
     - target: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
       propertyPath: m_Name
       value: Tree Type1 04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 470440, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
       propertyPath: m_RootOrder
@@ -601,6 +717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &209921575 stripped
@@ -675,23 +795,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1247785028}
     m_Modifications:
     - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_Name
       value: Box (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.7556
+      value: 3.7555995
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.7556
+      value: 3.7556005
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.z
@@ -699,15 +823,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 91.59
+      value: -12.951202
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.59
+      value: -39.604904
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -205.96
+      value: -109.78038
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -715,7 +839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.y
@@ -749,6 +873,10 @@ PrefabInstance:
     - target: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
       propertyPath: m_Name
       value: Tree Type1 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 470440, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
       propertyPath: m_RootOrder
@@ -863,6 +991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!1001 &272138048
@@ -870,23 +1002,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1247785028}
     m_Modifications:
     - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_Name
       value: Box (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.7556
+      value: 3.7555995
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.7556
+      value: 3.7556005
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalScale.z
@@ -894,15 +1030,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 91.59
+      value: -12.951202
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: -41.584904
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -204.62
+      value: -108.44038
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -910,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_LocalRotation.y
@@ -989,6 +1125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woods
       objectReference: {fileID: 0}
+    - target: {fileID: 4604486768188454198, guid: 1ecf13f524bb9f24f8865999c4720fce, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ecf13f524bb9f24f8865999c4720fce, type: 3}
 --- !u!4 &286641004 stripped
@@ -996,6 +1136,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3795897857709158284, guid: 1ecf13f524bb9f24f8865999c4720fce, type: 3}
   m_PrefabInstance: {fileID: 286641003}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &291797918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5921391504697806374, guid: 5284e19d79f18ca43b024510c85409e2, type: 3}
+  m_PrefabInstance: {fileID: 1090477590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &291797922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291797918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -69760931014144829, guid: d3b5338bd6552e24cb8bdf920b904821, type: 3}
 --- !u!1001 &295146658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1006,6 +1165,10 @@ PrefabInstance:
     - target: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
       propertyPath: m_Name
       value: Rock Type3 04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 468142, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
       propertyPath: m_RootOrder
@@ -1125,6 +1288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &297352857 stripped
@@ -1137,6 +1304,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2390805033392805853, guid: 76e2097443561b647adaa05fb983aa96, type: 3}
   m_PrefabInstance: {fileID: 1418729169}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &344718157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 166244, guid: 78a4b58c8edc1884e932497bbb0da899, type: 3}
+  m_PrefabInstance: {fileID: 948759555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &344718160
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344718157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 5f0c6f2eeb60c374aad117bde2bd80a1, type: 3}
 --- !u!1001 &345064979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1147,6 +1333,10 @@ PrefabInstance:
     - target: {fileID: 5922884322662716909, guid: 0224e7bbe5b06f74fa47bed3adcde6cd, type: 3}
       propertyPath: m_Name
       value: Well
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922884322662716909, guid: 0224e7bbe5b06f74fa47bed3adcde6cd, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6447359463358386007, guid: 0224e7bbe5b06f74fa47bed3adcde6cd, type: 3}
       propertyPath: m_RootOrder
@@ -1254,6 +1444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &347818685 stripped
@@ -1271,6 +1465,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6052090593202787211, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
   m_PrefabInstance: {fileID: 6052090593444990823}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &387834831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
+  m_PrefabInstance: {fileID: 591095683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &387834834
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387834831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: f50da248aa3fb334ab1caff0974120bf, type: 3}
 --- !u!1001 &388316092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1326,6 +1539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &388316093 stripped
@@ -1367,7 +1584,7 @@ Transform:
   - {fileID: 1540056883}
   - {fileID: 164003170}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &408193970
 PrefabInstance:
@@ -1424,6 +1641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &408193971 stripped
@@ -1431,6 +1652,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 408193970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &410396731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+  m_PrefabInstance: {fileID: 1021002375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &410396734
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410396731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: c8fd0d31d77530344baa4b459b8e221e, type: 3}
 --- !u!1001 &410988222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,6 +1681,10 @@ PrefabInstance:
     - target: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
       propertyPath: m_Name
       value: Tree Type4 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 406672, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
       propertyPath: m_RootOrder
@@ -1505,6 +1749,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 406672, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
   m_PrefabInstance: {fileID: 410988222}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &420631034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+  m_PrefabInstance: {fileID: 983146524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &420631037
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420631034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: c8fd0d31d77530344baa4b459b8e221e, type: 3}
 --- !u!1 &421754084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &448071237 stripped
@@ -1703,7 +1970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052090593202787215, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
       propertyPath: m_TagString
-      value: Food
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
@@ -1767,6 +2034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &476610377 stripped
@@ -1774,6 +2045,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 476610376}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &477400325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 151792, guid: 1e4e7284c1efd5f4eb702c799353072c, type: 3}
+  m_PrefabInstance: {fileID: 1080821517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &477400328
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477400325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 2ab8bbefc4a0d4948b52fdcbd7c3489b, type: 3}
 --- !u!4 &478388534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 413468, guid: 1e4e7284c1efd5f4eb702c799353072c, type: 3}
@@ -1833,6 +2123,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -1918,6 +2212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type2 01
       objectReference: {fileID: 0}
+    - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 489978, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -1976,6 +2274,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+--- !u!1 &512147287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+  m_PrefabInstance: {fileID: 508030619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &512147290
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512147287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 6425f5e52f03e4340a3afa5f62f57a0d, type: 3}
 --- !u!4 &514110488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444600, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
@@ -2036,6 +2353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vooden_Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 8064113153433566034, guid: 1577a51f2ebf155438ad431e44edd054, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1577a51f2ebf155438ad431e44edd054, type: 3}
 --- !u!4 &516191726 stripped
@@ -2043,6 +2364,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7251548138589528552, guid: 1577a51f2ebf155438ad431e44edd054, type: 3}
   m_PrefabInstance: {fileID: 516191725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &519802665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
+  m_PrefabInstance: {fileID: 2065509116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &519802668
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519802665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 815ec0c049d4ec849bd4960c32e13ec2, type: 3}
+--- !u!1 &525419498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
+  m_PrefabInstance: {fileID: 295146658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &525419501
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525419498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: f50da248aa3fb334ab1caff0974120bf, type: 3}
 --- !u!1001 &525904225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2097,6 +2456,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -2211,6 +2574,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3239269620652036000, guid: a16184fefc7b12243b0473f610336fc9, type: 3}
   m_PrefabInstance: {fileID: 3239269620071054917}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &586769831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+  m_PrefabInstance: {fileID: 272138048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &590062694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2272,7 +2640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052090593202787215, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
       propertyPath: m_TagString
-      value: Water
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
@@ -2286,6 +2654,10 @@ PrefabInstance:
     - target: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
       propertyPath: m_Name
       value: Rock Type3 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 468142, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
       propertyPath: m_RootOrder
@@ -2355,6 +2727,10 @@ PrefabInstance:
     - target: {fileID: 110398, guid: f584b275cfb132f48a2ec91fd9d1b576, type: 3}
       propertyPath: m_Name
       value: Rock Type5 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 110398, guid: f584b275cfb132f48a2ec91fd9d1b576, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 483248, guid: f584b275cfb132f48a2ec91fd9d1b576, type: 3}
       propertyPath: m_RootOrder
@@ -2469,6 +2845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &593782022 stripped
@@ -2481,6 +2861,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
   m_PrefabInstance: {fileID: 1823171102}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &617201290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
+  m_PrefabInstance: {fileID: 1462106123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &617201293
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617201290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
 --- !u!1001 &643768126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2535,6 +2934,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -2598,6 +3001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &656214374 stripped
@@ -2660,6 +3067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &657500004 stripped
@@ -2677,6 +3088,10 @@ PrefabInstance:
     - target: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
       propertyPath: m_Name
       value: Tree Type4 02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 430824, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
       propertyPath: m_RootOrder
@@ -2741,6 +3156,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 430824, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
   m_PrefabInstance: {fileID: 670237576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &679484466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 110398, guid: f584b275cfb132f48a2ec91fd9d1b576, type: 3}
+  m_PrefabInstance: {fileID: 591701037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &679484469
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679484466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: ee344ff51e4ffbb41949e122c861e46d, type: 3}
 --- !u!1001 &701245298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2796,6 +3230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &701245299 stripped
@@ -2815,7 +3253,7 @@ GameObject:
   - component: {fileID: 705507994}
   m_Layer: 0
   m_Name: Directional Light
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2894,7 +3332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &713800475 stripped
 Transform:
@@ -2911,6 +3349,10 @@ PrefabInstance:
     - target: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
       propertyPath: m_Name
       value: Tree Type4 01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 406672, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
       propertyPath: m_RootOrder
@@ -2985,6 +3427,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 470440, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
   m_PrefabInstance: {fileID: 229925857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &799737897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+  m_PrefabInstance: {fileID: 410988222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &799737900
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799737897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 9ddce011fb3cf3341b8c252c9b00cb4c, type: 3}
 --- !u!1001 &800885208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2995,6 +3456,10 @@ PrefabInstance:
     - target: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
       propertyPath: m_Name
       value: Tree Type3 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 459986, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
       propertyPath: m_RootOrder
@@ -3064,6 +3529,10 @@ PrefabInstance:
     - target: {fileID: 112728, guid: 069e1e44b643edc4fb4a9d4311a78fb7, type: 3}
       propertyPath: m_Name
       value: Tree Type5 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 112728, guid: 069e1e44b643edc4fb4a9d4311a78fb7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 474106, guid: 069e1e44b643edc4fb4a9d4311a78fb7, type: 3}
       propertyPath: m_RootOrder
@@ -3178,6 +3647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill
       objectReference: {fileID: 0}
+    - target: {fileID: 3194572283127358436, guid: dadc5d356bf1d214bb2e29c57c636430, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dadc5d356bf1d214bb2e29c57c636430, type: 3}
 --- !u!4 &804001662 stripped
@@ -3223,7 +3696,7 @@ Transform:
   m_LocalScale: {x: 50, y: 2.192, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &814960428
 MonoBehaviour:
@@ -3239,6 +3712,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombie: {fileID: 8770912705117793479, guid: 6312a08258c70064b8d949af5cedf710, type: 3}
   zombieLimit: 3
+--- !u!1 &820075407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+  m_PrefabInstance: {fileID: 124395185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &820075410
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820075407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: c8fd0d31d77530344baa4b459b8e221e, type: 3}
+--- !u!1 &821688304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 112728, guid: 069e1e44b643edc4fb4a9d4311a78fb7, type: 3}
+  m_PrefabInstance: {fileID: 802477758}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &821688307
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821688304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 1e97612a294865943926d93961f9c229, type: 3}
 --- !u!1001 &856642950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3293,6 +3804,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -3393,7 +3908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2836201952261829258, guid: 9ec9a389e33c64a418c1a821a228a8b5, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3177260995062376496, guid: 9ec9a389e33c64a418c1a821a228a8b5, type: 3}
       propertyPath: m_RootOrder
@@ -3496,6 +4011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &884033126 stripped
@@ -3508,6 +4027,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3497835605035114043, guid: 84af5464cd5090b43976093a1cd266d4, type: 3}
   m_PrefabInstance: {fileID: 3497835603968553317}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &893711149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
+  m_PrefabInstance: {fileID: 1689703776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &893711152
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893711149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: a797bea746bba59439067b50859ce461, type: 3}
 --- !u!1001 &931298635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3563,6 +4101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &931298636 stripped
@@ -3570,6 +4112,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 931298635}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &933919504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  m_PrefabInstance: {fileID: 1108636032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &933919507
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933919504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 0ddb82da3485fac4dbfe187acb70a610, type: 3}
 --- !u!1001 &948391433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3580,6 +4141,10 @@ PrefabInstance:
     - target: {fileID: 4017959717926633342, guid: 3ee41b4affb3dc94586979509002914b, type: 3}
       propertyPath: m_Name
       value: Wooden_Case
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017959717926633342, guid: 3ee41b4affb3dc94586979509002914b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4362151578927900100, guid: 3ee41b4affb3dc94586979509002914b, type: 3}
       propertyPath: m_RootOrder
@@ -3642,6 +4207,10 @@ PrefabInstance:
     - target: {fileID: 166244, guid: 78a4b58c8edc1884e932497bbb0da899, type: 3}
       propertyPath: m_Name
       value: Rock Type6 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 166244, guid: 78a4b58c8edc1884e932497bbb0da899, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 489240, guid: 78a4b58c8edc1884e932497bbb0da899, type: 3}
       propertyPath: m_RootOrder
@@ -3756,6 +4325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &949504119 stripped
@@ -3773,6 +4346,10 @@ PrefabInstance:
     - target: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
       propertyPath: m_Name
       value: Rock Type3 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 486942, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
       propertyPath: m_RootOrder
@@ -3914,7 +4491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 31.407, y: 1.898, z: 0.59}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -3930,9 +4507,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 581005797}
   delay: 0.3
-  distance: 12
-  height: 10
-  back: -1
+  distance: 8
+  height: 2
+  back: 0
 --- !u!1001 &970326549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3943,6 +4520,10 @@ PrefabInstance:
     - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_Name
       value: Tree Type1 01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 441318, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_RootOrder
@@ -4017,6 +4598,10 @@ PrefabInstance:
     - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_Name
       value: Tree Type0 05 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 459958, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_RootOrder
@@ -4136,6 +4721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &986516441 stripped
@@ -4197,6 +4786,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -4260,6 +4853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!1001 &1011140992
@@ -4317,6 +4914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1011140993 stripped
@@ -4334,6 +4935,10 @@ PrefabInstance:
     - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_Name
       value: Tree Type0 05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 459958, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_RootOrder
@@ -4508,6 +5113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1052986595 stripped
@@ -4541,6 +5150,10 @@ PrefabInstance:
     - target: {fileID: 151792, guid: 1e4e7284c1efd5f4eb702c799353072c, type: 3}
       propertyPath: m_Name
       value: Tree Type5 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 151792, guid: 1e4e7284c1efd5f4eb702c799353072c, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 413468, guid: 1e4e7284c1efd5f4eb702c799353072c, type: 3}
       propertyPath: m_RootOrder
@@ -4611,6 +5224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 5921391504697806374, guid: 5284e19d79f18ca43b024510c85409e2, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 6442067900683981980, guid: 5284e19d79f18ca43b024510c85409e2, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -4669,6 +5286,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5284e19d79f18ca43b024510c85409e2, type: 3}
+--- !u!1 &1093169319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
+  m_PrefabInstance: {fileID: 1942432652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1093169322
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093169319}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 5166d739d26f73246a2623515169479e, type: 3}
+--- !u!64 &1093169323
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093169319}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5166d739d26f73246a2623515169479e, type: 3}
 --- !u!1 &1106877013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,6 +5361,10 @@ PrefabInstance:
     - target: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
       propertyPath: m_Name
       value: Tree Type1 04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 470440, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
       propertyPath: m_RootOrder
@@ -4786,6 +5440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Type4 02
       objectReference: {fileID: 0}
+    - target: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 430824, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -4855,7 +5513,7 @@ GameObject:
   - component: {fileID: 1147803957}
   m_Layer: 0
   m_Name: Fences (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4938,6 +5596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1148689124 stripped
@@ -4945,6 +5607,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 1148689123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1181820775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114672, guid: 98653de49a7044442972e6997c40db16, type: 3}
+  m_PrefabInstance: {fileID: 1225411632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1181820778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181820775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: f6e7f2100b2c5544d94468d977d66b29, type: 3}
+--- !u!1 &1185378179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185286, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  m_PrefabInstance: {fileID: 229925857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1185378182
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185378179}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 0ddb82da3485fac4dbfe187acb70a610, type: 3}
 --- !u!1001 &1187486282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5000,6 +5700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1187486283 stripped
@@ -5007,6 +5711,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 1187486282}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1188960227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1100052995, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100052995, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693978, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 102.110565
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.004547
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621575846604693982, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd6c3485fc228bd44b2050a3335324a5, type: 3}
 --- !u!1 &1198081122
 GameObject:
   m_ObjectHideFlags: 0
@@ -5056,6 +5825,10 @@ PrefabInstance:
     - target: {fileID: 136328, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
       propertyPath: m_Name
       value: Tree Type4 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 136328, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 467666, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
       propertyPath: m_RootOrder
@@ -5165,6 +5938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Type6 03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114672, guid: 98653de49a7044442972e6997c40db16, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 492160, guid: 98653de49a7044442972e6997c40db16, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -5233,6 +6010,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 459958, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
   m_PrefabInstance: {fileID: 124395185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1237546673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160606, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
+  m_PrefabInstance: {fileID: 1553097740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1237546676
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237546673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 6b63ca9c7bc00f24b81b6cb48095b9a9, type: 3}
 --- !u!4 &1237680103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 441318, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
@@ -5254,7 +6050,7 @@ GameObject:
   - component: {fileID: 1247785028}
   m_Layer: 0
   m_Name: MapObjects
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5266,9 +6062,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247785027}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 104.5412, y: 42.1949, z: -96.17963}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.1532507, y: 13.380007, z: -12.654494}
+  m_LocalScale: {x: 2.1201265, y: 0.29624793, z: 0.15982926}
   m_Children:
   - {fileID: 1738696744}
   - {fileID: 804001662}
@@ -5336,8 +6132,11 @@ Transform:
   - {fileID: 983146525}
   - {fileID: 2060932579}
   - {fileID: 1459643861}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  - {fileID: 1280905476}
+  - {fileID: 586769831}
+  - {fileID: 2051407017}
+  m_Father: {fileID: 31720108}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250961549
 GameObject:
@@ -5372,8 +6171,13 @@ Transform:
   - {fileID: 1220162170}
   - {fileID: 1051077660}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1280905476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+  m_PrefabInstance: {fileID: 129550228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1282087995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459986, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
@@ -5394,6 +6198,10 @@ PrefabInstance:
     - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_Name
       value: Rock Type1 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 441272, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_RootOrder
@@ -5463,6 +6271,10 @@ PrefabInstance:
     - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_Name
       value: Tree Type1 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 441318, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_RootOrder
@@ -5577,6 +6389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1307925654 stripped
@@ -5639,6 +6455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Billet_02
       objectReference: {fileID: 0}
+    - target: {fileID: 7688200129740519689, guid: c650f48a4e81a7e408855add77a63f05, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c650f48a4e81a7e408855add77a63f05, type: 3}
 --- !u!4 &1309573556 stripped
@@ -5657,7 +6477,7 @@ GameObject:
   - component: {fileID: 1320795986}
   m_Layer: 0
   m_Name: Fences (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5702,6 +6522,10 @@ PrefabInstance:
     - target: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
       propertyPath: m_Name
       value: Rock Type3 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 486942, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
       propertyPath: m_RootOrder
@@ -5816,6 +6640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1340262524 stripped
@@ -5882,6 +6710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1341586888 stripped
@@ -5899,6 +6731,10 @@ PrefabInstance:
     - target: {fileID: 8252821846288497176, guid: 958ebaba05daaea408218354ec7b8995, type: 3}
       propertyPath: m_Name
       value: Watch_Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 8252821846288497176, guid: 958ebaba05daaea408218354ec7b8995, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 8776452527406948514, guid: 958ebaba05daaea408218354ec7b8995, type: 3}
       propertyPath: m_RootOrder
@@ -6045,6 +6881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Empty_Field
       objectReference: {fileID: 0}
+    - target: {fileID: 5395795509339391793, guid: 343d63e58c0d2c14b851888112f2b650, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343d63e58c0d2c14b851888112f2b650, type: 3}
 --- !u!4 &1365022964 stripped
@@ -6052,11 +6892,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4731708441098378635, guid: 343d63e58c0d2c14b851888112f2b650, type: 3}
   m_PrefabInstance: {fileID: 1365022963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1384187546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+  m_PrefabInstance: {fileID: 1556512053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1384187549
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384187546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: cb132eeaea305bc478721cc9b5cb57f8, type: 3}
 --- !u!4 &1402813852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 474244, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
   m_PrefabInstance: {fileID: 2107800812}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1403627232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+  m_PrefabInstance: {fileID: 716006024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1403627235
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403627232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 9ddce011fb3cf3341b8c252c9b00cb4c, type: 3}
 --- !u!1001 &1403901159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6111,6 +6989,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -6255,6 +7137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1420803559 stripped
@@ -6272,6 +7158,10 @@ PrefabInstance:
     - target: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
       propertyPath: m_Name
       value: Tree Type4 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 406672, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
       propertyPath: m_RootOrder
@@ -6331,6 +7221,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+--- !u!1 &1433631347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
+  m_PrefabInstance: {fileID: 1612691265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1433631350
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433631347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 20daf9d902df0d749bd16ac37a353854, type: 3}
 --- !u!1001 &1459643860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6341,6 +7250,10 @@ PrefabInstance:
     - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_Name
       value: Tree Type1 01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 441318, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_RootOrder
@@ -6416,6 +7329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type1 04
       objectReference: {fileID: 0}
+    - target: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 444600, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -6474,6 +7391,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
+--- !u!1 &1467240763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160606, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
+  m_PrefabInstance: {fileID: 1827929767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1467240766
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467240763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 6b63ca9c7bc00f24b81b6cb48095b9a9, type: 3}
 --- !u!1001 &1477330476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6529,8 +7465,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+--- !u!1 &1507247091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+  m_PrefabInstance: {fileID: 1967226779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1507247094
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507247091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 08d02c187472d684096f88c67beb6890, type: 3}
 --- !u!1001 &1508140555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6586,6 +7545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1508140556 stripped
@@ -6593,6 +7556,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 1508140555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1508466981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
+  m_PrefabInstance: {fileID: 670237576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1508466984
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508466981}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 20daf9d902df0d749bd16ac37a353854, type: 3}
 --- !u!1001 &1517886596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6603,6 +7585,10 @@ PrefabInstance:
     - target: {fileID: 114672, guid: 98653de49a7044442972e6997c40db16, type: 3}
       propertyPath: m_Name
       value: Tree Type6 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672, guid: 98653de49a7044442972e6997c40db16, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 492160, guid: 98653de49a7044442972e6997c40db16, type: 3}
       propertyPath: m_RootOrder
@@ -6672,6 +7658,10 @@ PrefabInstance:
     - target: {fileID: 2520461301341533580, guid: d9206355b7757244ab0f522bf6836655, type: 3}
       propertyPath: m_Name
       value: Bushes_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520461301341533580, guid: d9206355b7757244ab0f522bf6836655, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3004370028492812086, guid: d9206355b7757244ab0f522bf6836655, type: 3}
       propertyPath: m_RootOrder
@@ -6745,6 +7735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Type0 02
       objectReference: {fileID: 0}
+    - target: {fileID: 160606, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 498466, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -6803,6 +7797,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
+--- !u!1 &1553269051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
+  m_PrefabInstance: {fileID: 953155853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1553269054
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553269051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: d01883e876066d54280ca7ceb187f173, type: 3}
 --- !u!4 &1554733640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3177260995062376496, guid: 9ec9a389e33c64a418c1a821a228a8b5, type: 3}
@@ -6818,6 +7831,10 @@ PrefabInstance:
     - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_Name
       value: Tree Type1 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 441318, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
       propertyPath: m_RootOrder
@@ -6893,6 +7910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood_02
       objectReference: {fileID: 0}
+    - target: {fileID: 2651489086107281793, guid: 5c3bd99615643bd4c93c3866cb13d40b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 3422784001185657659, guid: 5c3bd99615643bd4c93c3866cb13d40b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -6960,6 +7981,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 474106, guid: 069e1e44b643edc4fb4a9d4311a78fb7, type: 3}
   m_PrefabInstance: {fileID: 802477758}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1612563499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+  m_PrefabInstance: {fileID: 1290853911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1612563502
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612563499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: cb132eeaea305bc478721cc9b5cb57f8, type: 3}
 --- !u!1001 &1612691265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6970,6 +8010,10 @@ PrefabInstance:
     - target: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
       propertyPath: m_Name
       value: Tree Type4 02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 430824, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
       propertyPath: m_RootOrder
@@ -7073,6 +8117,25 @@ Transform:
   m_Father: {fileID: 1250961550}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1620426050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
+  m_PrefabInstance: {fileID: 2107800812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1620426053
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620426050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: beb8ceccb376f684095ae1a93f088717, type: 3}
 --- !u!1001 &1639257643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7127,6 +8190,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -7190,6 +8257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1669446381 stripped
@@ -7208,7 +8279,7 @@ GameObject:
   - component: {fileID: 1670692661}
   m_Layer: 0
   m_Name: Fences
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7250,6 +8321,10 @@ PrefabInstance:
     - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_Name
       value: Rock Type2 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 476412, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_RootOrder
@@ -7314,6 +8389,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 220601395605672791, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
   m_PrefabInstance: {fileID: 220601393939369800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1701027852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 168064, guid: fb8ae0828a555f74996970b8d0495f15, type: 3}
+  m_PrefabInstance: {fileID: 1424595514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1701027855
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701027852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 9ddce011fb3cf3341b8c252c9b00cb4c, type: 3}
 --- !u!4 &1723091496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 489978, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
@@ -7329,6 +8423,10 @@ PrefabInstance:
     - target: {fileID: 7190989728183158723, guid: 1b9e59d5bb6f48643b2067fd21e8c7b7, type: 3}
       propertyPath: m_Name
       value: Water_Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190989728183158723, guid: 1b9e59d5bb6f48643b2067fd21e8c7b7, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 7530114932162387321, guid: 1b9e59d5bb6f48643b2067fd21e8c7b7, type: 3}
       propertyPath: m_RootOrder
@@ -7436,6 +8534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood_Car
       objectReference: {fileID: 0}
+    - target: {fileID: 2032747138085375153, guid: 9acd46bf5bf85774e88502a8be84d200, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9acd46bf5bf85774e88502a8be84d200, type: 3}
 --- !u!4 &1738696744 stripped
@@ -7443,6 +8545,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1692812964319794699, guid: 9acd46bf5bf85774e88502a8be84d200, type: 3}
   m_PrefabInstance: {fileID: 1738696743}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1739544572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 116970, guid: 38ade0ba7c293f14a9b1b610879e9390, type: 3}
+  m_PrefabInstance: {fileID: 1132967639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1739544575
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739544572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 20daf9d902df0d749bd16ac37a353854, type: 3}
 --- !u!1001 &1741980727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7453,6 +8574,10 @@ PrefabInstance:
     - target: {fileID: 120164, guid: 61b490990a08faa419b1bb6a6708ad09, type: 3}
       propertyPath: m_Name
       value: Rock Type3 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 120164, guid: 61b490990a08faa419b1bb6a6708ad09, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 405348, guid: 61b490990a08faa419b1bb6a6708ad09, type: 3}
       propertyPath: m_RootOrder
@@ -7544,7 +8669,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 30
+  m_CookingOptions: -1
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1763843249
 MeshRenderer:
@@ -7607,7 +8732,7 @@ Transform:
   m_LocalScale: {x: 73.031944, y: 1, z: 59.280846}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1763843252
 BoxCollider:
@@ -7677,6 +8802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1767243389 stripped
@@ -7689,6 +8818,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 486942, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
   m_PrefabInstance: {fileID: 953155853}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1780387853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111430, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
+  m_PrefabInstance: {fileID: 1941204506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1780387856
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780387853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 110d2d66b09076d4e88fb91dc58961ab, type: 3}
 --- !u!1001 &1809703873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7743,6 +8891,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -7806,6 +8958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1812398362 stripped
@@ -7813,6 +8969,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
   m_PrefabInstance: {fileID: 1812398361}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1818369922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+  m_PrefabInstance: {fileID: 2077097572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1818369925
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818369922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: c8fd0d31d77530344baa4b459b8e221e, type: 3}
 --- !u!1001 &1820916522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7886,6 +9061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
+    - target: {fileID: 5880609338212720890, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -7944,6 +9123,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+--- !u!1 &1827100604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 136328, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
+  m_PrefabInstance: {fileID: 1207477945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1827100607
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827100604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 361dbd13abe581240910f764f838d930, type: 3}
 --- !u!1001 &1827929767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7954,6 +9152,10 @@ PrefabInstance:
     - target: {fileID: 160606, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
       propertyPath: m_Name
       value: Tree Type0 02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 160606, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 498466, guid: 5c3cbac9d5eae3844a928d36e6dbd1a6, type: 3}
       propertyPath: m_RootOrder
@@ -8033,6 +9235,10 @@ PrefabInstance:
     - target: {fileID: 181472, guid: e9661e4c2bfea8344a07064944abe034, type: 3}
       propertyPath: m_Name
       value: Rock Type4 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 181472, guid: e9661e4c2bfea8344a07064944abe034, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 468178, guid: e9661e4c2bfea8344a07064944abe034, type: 3}
       propertyPath: m_RootOrder
@@ -8147,6 +9353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1865883829 stripped
@@ -8201,8 +9411,84 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1870674084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 136328, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
+  m_PrefabInstance: {fileID: 2048021705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1870674087
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870674084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 361dbd13abe581240910f764f838d930, type: 3}
+--- !u!1 &1879992155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 198980, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
+  m_PrefabInstance: {fileID: 2060932578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1879992158
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879992155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: dec71bb4e66221144b5db0af9e0f39d5, type: 3}
+--- !u!1 &1888933473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
+  m_PrefabInstance: {fileID: 1290358592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1888933476
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888933473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 9d775005a3ddca74096b475e99b14c13, type: 3}
+--- !u!1 &1921678033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
+  m_PrefabInstance: {fileID: 1459643860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1921678036
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921678033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: cb132eeaea305bc478721cc9b5cb57f8, type: 3}
 --- !u!1001 &1924597710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8213,6 +9499,10 @@ PrefabInstance:
     - target: {fileID: 198980, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
       propertyPath: m_Name
       value: Tree Type1 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 198980, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 403426, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
       propertyPath: m_RootOrder
@@ -8283,6 +9573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type1 02
       objectReference: {fileID: 0}
+    - target: {fileID: 111430, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -8351,6 +9645,10 @@ PrefabInstance:
     - target: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
       propertyPath: m_Name
       value: Tree Type3 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 459986, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
       propertyPath: m_RootOrder
@@ -8470,6 +9768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &1950459496 stripped
@@ -8487,6 +9789,10 @@ PrefabInstance:
     - target: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
       propertyPath: m_Name
       value: Rock Type3 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 408956, guid: be320b6d231cacc4894038f2c3375674, type: 3}
       propertyPath: m_RootOrder
@@ -8546,6 +9852,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+--- !u!1 &1974632459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
+  m_PrefabInstance: {fileID: 2117391116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1974632462
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974632459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 5166d739d26f73246a2623515169479e, type: 3}
 --- !u!4 &1981423711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 403484, guid: dc8f0d303746c2a4b89ee60884906304, type: 3}
@@ -8605,6 +9930,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
       propertyPath: m_Name
       value: Fence_Bold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -8688,6 +10017,39 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2006203726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 198980, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
+  m_PrefabInstance: {fileID: 1924597710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2006203729
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006203726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: dec71bb4e66221144b5db0af9e0f39d5, type: 3}
+--- !u!64 &2006203730
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006203726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: dec71bb4e66221144b5db0af9e0f39d5, type: 3}
 --- !u!4 &2006660122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6442067900683981980, guid: 5284e19d79f18ca43b024510c85409e2, type: 3}
@@ -8752,6 +10114,10 @@ PrefabInstance:
     - target: {fileID: 5395795509339391793, guid: 343d63e58c0d2c14b851888112f2b650, type: 3}
       propertyPath: m_Name
       value: Empty_Field (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5395795509339391793, guid: 343d63e58c0d2c14b851888112f2b650, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343d63e58c0d2c14b851888112f2b650, type: 3}
@@ -8855,6 +10221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Type4 04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 136328, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 467666, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -8918,6 +10288,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 467666, guid: 613b4cc8c589ad8458e792ae21891bef, type: 3}
   m_PrefabInstance: {fileID: 2048021705}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2051407017 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6545928894501091904, guid: ad7194aa8031aa74d9226754ef39fadc, type: 3}
+  m_PrefabInstance: {fileID: 225965788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2059741077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
@@ -8978,6 +10353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Bold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db15f164b0bc1b41ac6db7d1f56c80b, type: 3}
 --- !u!4 &2060044108 stripped
@@ -8995,6 +10374,10 @@ PrefabInstance:
     - target: {fileID: 198980, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
       propertyPath: m_Name
       value: Tree Type1 03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 198980, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 403426, guid: 55ca4401075700d46a23ae8179a79579, type: 3}
       propertyPath: m_RootOrder
@@ -9070,6 +10453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type2 02
       objectReference: {fileID: 0}
+    - target: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 477016, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -9139,6 +10526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Type0 05 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 117604, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 459958, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -9202,6 +10593,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 459958, guid: 9469bb1d3aa88ca40aa4079e96a27f8e, type: 3}
   m_PrefabInstance: {fileID: 2077097572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2087211679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114672, guid: 98653de49a7044442972e6997c40db16, type: 3}
+  m_PrefabInstance: {fileID: 1517886596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2087211682
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087211679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: f6e7f2100b2c5544d94468d977d66b29, type: 3}
+--- !u!1 &2098674816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 120164, guid: 61b490990a08faa419b1bb6a6708ad09, type: 3}
+  m_PrefabInstance: {fileID: 1741980727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2098674819
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098674816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: 5ccad72751160e341ad0b43ec43a620a, type: 3}
 --- !u!4 &2102741861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 489240, guid: 78a4b58c8edc1884e932497bbb0da899, type: 3}
@@ -9217,6 +10646,10 @@ PrefabInstance:
     - target: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
       propertyPath: m_Name
       value: Rock Type1 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 474244, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
       propertyPath: m_RootOrder
@@ -9287,6 +10720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Type3 01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 111494, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 459986, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -9350,6 +10787,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 459986, guid: 62724a8cd2495b14f930b7129c3bc47b, type: 3}
   m_PrefabInstance: {fileID: 2117391116}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2137869378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652, type: 3}
+  m_PrefabInstance: {fileID: 1333045477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2137869381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137869378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 4300000, guid: d01883e876066d54280ca7ceb187f173, type: 3}
 --- !u!1001 &220601393939369800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9360,6 +10816,10 @@ PrefabInstance:
     - target: {fileID: 220601395605672786, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
       propertyPath: m_Name
       value: 'HealthBox '
+      objectReference: {fileID: 0}
+    - target: {fileID: 220601395605672786, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 220601395605672788, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
       propertyPath: m_IsTrigger
@@ -9523,6 +10983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Holder
       objectReference: {fileID: 0}
+    - target: {fileID: 3239269620652036007, guid: a16184fefc7b12243b0473f610336fc9, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a16184fefc7b12243b0473f610336fc9, type: 3}
 --- !u!1001 &3497835603968553317
@@ -9538,7 +11002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3497835605035114043, guid: 84af5464cd5090b43976093a1cd266d4, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3497835605035114043, guid: 84af5464cd5090b43976093a1cd266d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9693,6 +11157,10 @@ PrefabInstance:
     - target: {fileID: 6052090593202787215, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
       propertyPath: m_Name
       value: AmmoBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052090593202787215, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
