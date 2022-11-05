@@ -36,14 +36,13 @@ public class Camera : MonoBehaviour
         targetRotation.x = 0;//Dont rotate vertically 
         targetRotation.z = 0;
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 4f * Time.deltaTime);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 4f * Time.deltaTime);
 
         pos.x = player.position.x + back;
         pos.z = (player.position.z - distance);
         pos.y = player.position.y + height;
 
         transform.position = Vector3.SmoothDamp(transform.position, pos, ref velocity, delay);
-        Debug.Log(transform.rotation.eulerAngles.y);
 
        
        

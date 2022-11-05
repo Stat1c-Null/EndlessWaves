@@ -9,13 +9,18 @@ public class ZombieSpawner : MonoBehaviour
     private float SpawnXPos;
     private float SpawnZPos;
     private int spawnDelay;
-    public int zombieLimit = 20;
+    public int zombieLimit = 0;
+    public int dayLimit = 5;
+    public int nightLimit = 15;
     private bool spawn = false;
     private float SpawnerX;
     private float SpawnerZ;
     private float SpawnerXScale;
     private float SpawnerZScale;
-
+    public GameObject GameManager;
+    public int NightDelay = 10;
+    public int DayDelay = 30;
+    
     void Start()
     {
         SpawnerX = transform.position.x;
@@ -50,10 +55,22 @@ public class ZombieSpawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        spawnDelay = Random.Range(5,10);
-        spawn = true;
-        SpawnZombie();
-        yield return new WaitForSeconds(spawnDelay);
-        spawn = false;
+        if(GameManager.GetComponent<DayNightTime>().night == false) {
+            Debug.Log("Day Spawn");
+            zombieLimit = dayLimit;
+            spawnDelay = Random.Range(DayDelay,DayDelay+5);
+            spawn = true;
+            SpawnZombie();
+            yield return new WaitForSeconds(spawnDelay);
+            spawn = false;
+        } else {
+            Debug.Log("Night Spawn");
+            zombieLimit = nightLimit;
+            spawnDelay = Random.Range(NightDelay,NightDelay+5);
+            spawn = true;
+            SpawnZombie();
+            yield return new WaitForSeconds(spawnDelay);
+            spawn = false;
+        }
     }
 }

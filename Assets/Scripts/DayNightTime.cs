@@ -35,7 +35,7 @@ public class DayNightTime : MonoBehaviour
         while (minTime > 0){
             yield return new WaitForSeconds(WaitTime);
             minTime -= 1;    
-            Debug.Log(minTime);
+            //Debug.Log(minTime);
             if (minTime % 4 == 0)
             {
                 minutesTime += 10;
@@ -48,17 +48,8 @@ public class DayNightTime : MonoBehaviour
             hourSurvive += 1;
             AddHour = false;
         }
-            if (hourTime > 23){
-                hourTime = 0;
-                day += 1;
-            }
-            else if (hourTime == 18){
-                night = true;
-            }
-            else if (hourTime == 6){
-                night = false;
-            }
         
+    
     }
     void Update()
     {
@@ -70,6 +61,16 @@ public class DayNightTime : MonoBehaviour
             TimeHud.text = "Day: " + day + " Time: " + hourTime + ":" + minutesTime + "0";
         } else {
             TimeHud.text = "Day: " + day + " Time: " + hourTime + ":" + minutesTime;
+        }
+        if (hourTime > 23){
+            hourTime = 0;
+            day += 1;
+        }
+        else if (hourTime == 18){
+            night = true;
+        }
+        else if (hourTime == 6){
+            night = false;
         }
         
     }

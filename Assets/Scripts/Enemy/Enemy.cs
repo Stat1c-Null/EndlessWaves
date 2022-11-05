@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         Debug.Log("Enemy dead");
-        player.GetComponent<Player>().points += pointsToGive;
+        //player.GetComponent<Player>().points += pointsToGive;
         Destroy(this.gameObject);
     }
 }
