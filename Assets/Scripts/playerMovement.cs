@@ -23,14 +23,11 @@ public class playerMovement : MonoBehaviour
     float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
-    private GameObject ThirdPersCamera;
-    Vector3 viewDirec;
     // Start is called before the first frame update
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        ThirdPersCamera = GameObject.FindWithTag("Main Camera");
     }
 
     private void Update()
@@ -40,14 +37,14 @@ public class playerMovement : MonoBehaviour
         //viewDirec = ThirdPersCamera.GetComponent<ThirdPersonCamera>().viewDirec;
         //Debug.Log(viewDirec);
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ground);
-        Debug.Log(grounded);
+        grounded = Physics.Raycast(transform.position, Vector3.up, playerHeight * 0.5f + 0.2f, ground);
         //Apply drag
         if (grounded) {
             Debug.Log("Test");
-            rb.drag = groundDrag;
-        } else {
             rb.drag = 0;
+        } else {
+            rb.drag = groundDrag;
+            
         }
     }
 
@@ -75,7 +72,7 @@ public class playerMovement : MonoBehaviour
         // calc movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
         //on ground
-        rb.AddForce(moveDirection * moveSpeed * 10f,ForceMode.Force);
+        rb.AddForce(moveDirection.normalized * moveSpeed * 10f,ForceMode.Force);
 
         //In air 
 
