@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3239269620652036001}
   m_Layer: 0
   m_Name: Player Holder
-  m_TagString: Player
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,23 +157,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  camera: {fileID: 0}
-  PlayerObj: {fileID: 3239269621010696066}
+  runSpeed: 15
   jumpForce: 3
   IsGrounded: 0
+  camera: {fileID: 0}
+  PlayerObj: {fileID: 3239269621010696066}
   bulletSpawnPoint: {fileID: 3239269620685743042}
   waitTime: 0.5
   bullet: {fileID: 8232405135904151159, guid: 00e91e536ee55944ea563741fdbf21cc, type: 3}
-  points: 0
   health: 100
+  stamina: 100
+  maxStamina: 100
+  MovingStaminaRegen: 5
+  NotMovingStaminaRegen: 10
+  staminaConsum: 15
   enemyDamage: 0.05
+  thirstStat: 100
+  maxThirstStat: 100
+  hungerStat: 100
+  maxHungerStat: 100
+  hungerDec: 0.2
+  thirstDec: 0.5
+  points: 0
   maxHandgunAmmo: 100
-  currentHandgunAmmo: 100
+  currentHandgunAmmo: 20
   maxHandgunClipAmmo: 11
   currentHandgunClipAmmo: 11
+  restoredHealth: 25
+  restoredAmmo: 30
   currentAmmoText: {fileID: 0}
   maxAmmoText: {fileID: 0}
   healthText: {fileID: 0}
+  thirstText: {fileID: 0}
+  hungerText: {fileID: 0}
+  StaminUi: {fileID: 0}
 --- !u!1 &3239269620685743042
 GameObject:
   m_ObjectHideFlags: 0

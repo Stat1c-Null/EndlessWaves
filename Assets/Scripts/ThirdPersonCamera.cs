@@ -12,6 +12,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     public float rotationSpeed;
 
+    public Vector3 viewDirec;
+
     private void Start() {
         //Make cursor visible or invisible
         Cursor.lockState = CursorLockMode.Locked;
@@ -23,7 +25,7 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         //Rotate orientation
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
-        orientation.forward = viewDir.normalized;
+        //orientation.forward = viewDir.normalized;
 
         //Rotate player object
         float horizontalInput = Input.GetAxis("Horizontal");

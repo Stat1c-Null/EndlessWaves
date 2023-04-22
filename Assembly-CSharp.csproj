@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\Enemy\EnemyRandomMovement.cs" />
      <Compile Include="Assets\Scripts\DayNightTime.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyPatrolling.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
@@ -48,6 +49,7 @@
      <Compile Include="Assets\Packages\LowPolyFencePack\Scripts\DoorController.cs" />
      <Compile Include="Assets\Bullet.cs" />
      <Compile Include="Assets\Scripts\bullet.cs" />
+     <Compile Include="Assets\Scripts\playerMovement.cs" />
      <None Include="Assets\Packages\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
      <None Include="Assets\Packages\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
      <None Include="Assets\Packages\LowPolyTreePack\README.txt" />
@@ -618,8 +620,14 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:\Apps\2020.3.32f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>C:\Users\slaby\Documents\GitHub\EndlessWaves\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\slaby\Documents\GitHub\EndlessWaves\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>C:\Users\slaby\Documents\GitHub\EndlessWaves\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\slaby\Documents\GitHub\EndlessWaves\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
