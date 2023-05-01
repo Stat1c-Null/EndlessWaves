@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     [Header("Stats")]
     public float health = 100f;
     private float maxHealth = 100f;
+    public float restoredHealth = 25f;
     private float reloadedHealth;
     public float stamina = 100f;
     public float maxStamina = 100f;
@@ -49,7 +50,6 @@ public class Player : MonoBehaviour
     public int maxHandgunClipAmmo = 11;
     public int currentHandgunClipAmmo = 11;
     private int reloadedAmmo;
-    public float restoredHealth = 25f;
     public int restoredAmmo = 30;
     //UI
     [Header("UI")]

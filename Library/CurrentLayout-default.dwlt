@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 722.8
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 109
+  controlID: 47
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
     y: 0
     width: 1172.8
     height: 722.8
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 48
@@ -250,8 +250,8 @@ MonoBehaviour:
     y: 0
     width: 1172.8
     height: 451.2
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 49
 --- !u!114 &11
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 16478
+  m_LastSelectedObjectID: 16486
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -408,22 +408,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\slaby\Documents\GitHub\EndlessWaves
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04460000
-    m_LastClickedID: 17924
-    m_ExpandedIDs: 00000000e045000000ca9a3b
+    m_SelectedIDs: 38460000
+    m_LastClickedID: 17976
+    m_ExpandedIDs: 000000001c46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,7 +451,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0450000
+    m_ExpandedIDs: 000000001c460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -539,7 +539,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 63.200012
+  m_LastVerticalScrollValue: 470.40002
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -572,9 +572,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5e400000
-      m_LastClickedID: 16478
-      m_ExpandedIDs: 68fbffff5e400000
+      m_SelectedIDs: 98f8ffff
+      m_LastClickedID: -1896
+      m_ExpandedIDs: 80dcffff96f8ffffcaf8ffff66fbffffa03f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 3DPlayer
@@ -585,7 +585,7 @@ MonoBehaviour:
           y: 0
           width: 0
           height: 0
-        m_UserData: 16478
+        m_UserData: 16486
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -634,9 +634,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 95.229675, y: 10.169872, z: -43.346962}
+    m_Target: {x: 100.52539, y: 5.1087027, z: -37.720055}
     speed: 2
-    m_Value: {x: 95.229675, y: 10.169872, z: -43.346962}
+    m_Value: {x: 100.52539, y: 5.1087027, z: -37.720055}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -683,9 +683,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2663858, y: -0.06702404, z: 0.018567216, w: -0.9613652}
+    m_Target: {x: -0.10050395, y: 0.051609203, z: -0.005225082, w: -0.99359745}
     speed: 2
-    m_Value: {x: -0.26638293, y: -0.067023315, z: 0.018567016, w: -0.9613549}
+    m_Value: {x: -0.10049461, y: 0.05309881, z: -0.0053757573, w: -0.99350524}
   m_Size:
     m_Target: 1.2405276
     speed: 2
@@ -695,8 +695,8 @@ MonoBehaviour:
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.1804098
-    m_SpeedNormalized: 0.5899999
+    m_Speed: 1.4202896
+    m_SpeedNormalized: 0.7099998
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
