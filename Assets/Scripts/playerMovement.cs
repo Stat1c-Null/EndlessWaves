@@ -11,7 +11,7 @@ public class playerMovement : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
-    bool readyToJump;
+    bool readyToJump = true;
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask ground;
@@ -34,17 +34,11 @@ public class playerMovement : MonoBehaviour
     {
         MyInput();
         SpeedControl();
-        //viewDirec = ThirdPersCamera.GetComponent<ThirdPersonCamera>().viewDirec;
-        //Debug.Log(viewDirec);
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.up, playerHeight * 0.5f + 0.2f, ground);
         //Apply drag
         if (grounded) {
-            Debug.Log("Test");
-            rb.drag = 0;
-        } else {
             rb.drag = groundDrag;
-            
+        } else {
+            rb.drag = 0;
         }
     }
 
@@ -60,7 +54,7 @@ public class playerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         //Jump
-        if(Input.GetKey(jumpKey) && readyToJump) {//Also chec k if grounded later on
+        if(Input.GetKey(jumpKey) && readyToJump && grounded) {//Also chec k if grounded later on
             readyToJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
@@ -101,5 +95,20 @@ public class playerMovement : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    // ground check
+    void OnCollisionStay(Collision collision) 
+    {
+        if(collision.gameObject.tag == "Ground") {
+            grounded = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision) 
+    {
+        if(collision.gameObject.tag == "Ground") {
+            grounded = false;
+        }
     }
 }
