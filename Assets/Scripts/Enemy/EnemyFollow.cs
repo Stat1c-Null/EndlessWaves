@@ -42,6 +42,7 @@ public class EnemyFollow : MonoBehaviour
 
     void FollowPlayer()
     {
+        
         chasing = true;
         //Rotate towards the player
         transform.rotation = Quaternion.Slerp(transform.rotation , Quaternion.LookRotation(player.position - transform.position), rotSpeed * Time.deltaTime);

@@ -144,7 +144,7 @@ MonoBehaviour:
   player: {fileID: 0}
   rotSpeed: 10
   moveSpeed: 8
-  maxDistance: 20
+  maxDistance: 100
   chasing: 0
 --- !u!114 &4886081339271830980
 MonoBehaviour:

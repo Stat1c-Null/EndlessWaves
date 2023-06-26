@@ -25,7 +25,7 @@ public class EnemyRandomMovement : MonoBehaviour
         //Detect if chasing player or no
         chasing = gameObject.GetComponent<EnemyFollow>().chasing;
         if(chasing == false){
-
+            //Debug.Log(chasing);
             if(isWandering == false)
             {
                 StartCoroutine(Wander());

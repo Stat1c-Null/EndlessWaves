@@ -97,6 +97,8 @@ public class playerMovement : MonoBehaviour
         healthText.text = health.ToString("0") + " H";//Remove decimal numbers at the end of health
         thirstText.text = thirstStat.ToString("0") + "TH";
         hungerText.text = hungerStat.ToString("0") + "H";
+        //Update Stamina UI
+        StaminUi.fillAmount = stamina / maxStamina;
     }
 
     private void FixedUpdate()
@@ -133,10 +135,12 @@ public class playerMovement : MonoBehaviour
     void StateHandler()
     {
         //Mode Sprinting
-        if(grounded && Input.GetKey(sprintKey))
+        if(grounded && Input.GetKey(sprintKey) && stamina > 0)
         {
             state = MoveState.sprint;
             moveSpeed = sprint_speed;
+            stamina -= staminaConsum * Time.deltaTime;
+            sprinting = true;
         }
 
         //Mode Walking
@@ -144,6 +148,9 @@ public class playerMovement : MonoBehaviour
         {
             state = MoveState.walk;
             moveSpeed = walk_speed;
+            if (stamina < maxStamina) {
+                stamina += MovingStaminaRegen * Time.deltaTime;
+            }
         }
 
         //Mode Crouching
