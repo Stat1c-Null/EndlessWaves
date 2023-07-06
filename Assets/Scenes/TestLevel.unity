@@ -4495,7 +4495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880746878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.6, y: -35.64, z: 57.5}
+  m_LocalPosition: {x: 80.5, y: -35.64, z: 43.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1798105581}
@@ -4550,7 +4550,7 @@ MonoBehaviour:
   MovingStaminaRegen: 5
   NotMovingStaminaRegen: 10
   staminaConsum: 10
-  enemyDamage: 0.1
+  enemyDamage: 3
   thirstStat: 100
   maxThirstStat: 100
   hungerStat: 100
@@ -5184,8 +5184,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.04763198, y: 0.0000000021483566, z: -1.02446746e-10, w: 0.99886495}
-  m_LocalPosition: {x: 4.529999, y: 3.5510025, z: -26.690002}
+  m_LocalRotation: {x: 0.04763198, y: -0.0000000021483566, z: 1.02446746e-10, w: 0.99886495}
+  m_LocalPosition: {x: 25.43, y: 3.5510025, z: -40.590004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7281,7 +7281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280082116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.529999, y: 3.5510025, z: -26.690002}
+  m_LocalPosition: {x: 25.43, y: 3.5510025, z: -40.590004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1414070585}
@@ -11266,7 +11266,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843486678}
-  m_LocalRotation: {x: 0.047631975, y: 0.0000000021483564, z: -1.02446746e-10, w: 0.99886495}
+  m_LocalRotation: {x: 0.047631975, y: -0.0000000021483564, z: 1.02446746e-10, w: 0.99886495}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13147,7 +13147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 220601395605672786, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: HealthBox
       objectReference: {fileID: 0}
     - target: {fileID: 220601395605672788, guid: 67ad23f9c5112b143b28d6810bd20b0f, type: 3}
       propertyPath: m_IsTrigger
@@ -13268,6 +13268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1106877014}
     m_Modifications:
+    - target: {fileID: 3439786832745196690, guid: 6312a08258c70064b8d949af5cedf710, type: 3}
+      propertyPath: maxDistance
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7125540777317089005, guid: 6312a08258c70064b8d949af5cedf710, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13375,7 +13379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052090593202787215, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: AmmoBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cd051cbabe2ba14e99c34cccff5eea8, type: 3}

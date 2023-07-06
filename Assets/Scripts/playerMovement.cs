@@ -52,6 +52,8 @@ public class playerMovement : MonoBehaviour
     public Text hungerText;
     public Image StaminUi;
 
+    private bool touchingEnemy = false;
+
     float horizontalInput;
     float verticalInput;
     Vector3 moveDirection;
@@ -66,6 +68,18 @@ public class playerMovement : MonoBehaviour
         crouch,
         air
     }
+
+    //Cameras
+    public Transform lookAt;
+
+    public CameraStyle currentStyle;
+
+    public enum CameraStyle 
+    {
+        Basic,
+        Combat
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -99,6 +113,16 @@ public class playerMovement : MonoBehaviour
         hungerText.text = hungerStat.ToString("0") + "H";
         //Update Stamina UI
         StaminUi.fillAmount = stamina / maxStamina;
+
+        //Decrease health if colliding with enemy
+        if(touchingEnemy) 
+        {
+            health -= enemyDamage * Time.deltaTime;
+        }
+        //Kill Player
+        if(health <= 0) {
+            Destroy(this.gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -219,14 +243,6 @@ public class playerMovement : MonoBehaviour
             thirstStat += Random.Range(15, 30);
             Destroy(collision.gameObject);
         }
-    }
-
-    // ground check
-    void OnCollisionStay(Collision collision) 
-    {
-        if(collision.gameObject.tag == "Ground") {
-            grounded = true;
-        }
 
         //Check for collision with ammo or health box
         if(collision.gameObject.tag == "HealthBox" && health < maxHealth) 
@@ -245,10 +261,27 @@ public class playerMovement : MonoBehaviour
         }
     }
 
+    // ground check
+    void OnCollisionStay(Collision collision) 
+    {
+        if(collision.gameObject.tag == "Ground") {
+            grounded = true;
+        }
+
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyRandom") {
+            touchingEnemy = true;
+        }
+
+    }
+
     void OnCollisionExit(Collision collision) 
     {
         if(collision.gameObject.tag == "Ground") {
             grounded = false;
+        }
+
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyRandom") {
+            touchingEnemy = false;
         }
     }
 
