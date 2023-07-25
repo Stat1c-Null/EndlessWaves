@@ -74,11 +74,14 @@ public class playerMovement : MonoBehaviour
 
     public CameraStyle currentStyle;
 
-    public enum CameraStyle 
+    public enum CameraStyle
     {
         Basic,
         Combat
     }
+
+    public GameObject freeCamera;
+    public GameObject combatCamera;
 
     // Start is called before the first frame update
     private void Start()
@@ -153,6 +156,17 @@ public class playerMovement : MonoBehaviour
         //Stop Crouching
         if (Input.GetKeyUp(crouchKey)) {
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+        }
+
+        //Switch camera
+        if(Input.GetMouseButton(1)) {
+            currentStyle = CameraStyle.Combat;
+            freeCamera.SetActive(false);
+            combatCamera.SetActive(true);
+        } else {
+            currentStyle = CameraStyle.Basic;
+            freeCamera.SetActive(true);
+            combatCamera.SetActive(false);
         }
 
     }
